@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>AMOMORNING</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://amomorning.github.io/"/>
+  <updated>2017-11-21T21:13:08.588Z</updated>
+  <id>https://amomorning.github.io/</id>
+  
+  <author>
+    <name>amo</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://amomorning.github.io/2017/11/22/hello-world/"/>
+    <id>https://amomorning.github.io/2017/11/22/hello-world/</id>
+    <published>2017-11-21T20:34:05.780Z</published>
+    <updated>2017-11-21T21:13:08.588Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="built_in">puts</span>(<span class="string">"hello world!"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><del>深深的绝望</del></p><a id="more"></a><p>我好像越来越像程序员了。。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;bits/stdc++.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  	&lt;span class=&quot;built_in&quot;&gt;puts&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;hello world!&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;del&gt;深深的绝望&lt;/del&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="daily" scheme="https://amomorning.github.io/tags/daily/"/>
+    
+  </entry>
+  
+</feed>
