@@ -17,7 +17,7 @@ $green-color-lime:    #B7D12A !default;
 $green-color-dark:    #009f06 !default;
 $green-color-light:   #ddffdd !default;
 $green-color-bright:  #11D68B !default;
-$purple-color:        #667eb1 !default;
+$purple-color:        #B4C5E4 !default;
 $light-purple-color:  lighten($purple-color, 25%);
 $pink-color:          #f92080 !default;
 $pink-color-light:    #ffdddd !default;
@@ -35,3 +35,6 @@ $black-color: #000000 !default;
 
 $code-bg-color-light:     rgba($purple-color, 0.05);
 $code-bg-color-dark:      #2c3237 !default;
+
+$theme-color-list: #90B2D1, #599E9B, #5EB1BF, #DB5461, #667EB1;
+$theme-color-custom: nth($theme-color-list, random(5));

@@ -4,9 +4,17 @@
 
 // Typography
 
+
 p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
   color: var(--global-text-color);
+
 }
+
+p, ol {
+  font-size: 1rem;
+  line-height: 180%;
+}
+
 
 hr {
   border-top: 1px solid var(--global-divider-color);
@@ -243,6 +251,7 @@ footer.fixed-bottom {
     color: var(--global-footer-text-color);
     padding-top: 9px;
     padding-bottom: 8px;
+    
   }
   a {
     color: var(--global-footer-link-color);

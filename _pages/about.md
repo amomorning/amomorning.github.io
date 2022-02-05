@@ -22,6 +22,6 @@ My research interest are architectural representation learning and geometry proc
 
 Prior to Nanjing, I received my [bachelor degree](https://github.com/amomorning/IPlayout "Click to the project's repository") at Zhejiang Sci-Tech University, majored in **Architecture**. I also received my [second bachelor degree](https://github.com/amomorning/semantic-body "Click to the project's repository") at ZSTU, majored in **Computer Science**.
 
-I am awarded the 2019 DigitalFUTURES YOUNG STAR and [Google Girl Hackathon Season V Battle Winner](https://github.com/amomorning/google-girl-hackathon-v "Click to the project's repository").
+I received the DigitalFUTURES YOUNG STAR (2019) and [Google Girl Hackathon Season V Battle Winner](https://github.com/amomorning/google-girl-hackathon-v "Click to the project's repository").
 
 

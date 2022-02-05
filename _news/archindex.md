@@ -16,22 +16,7 @@ toc:
   - name: 方法
   - name: 技术细节
   - name: 应用展示
-  
-_styles: >
-  .fake-img {
-    background: #bbb;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 12px;
-  }
-  .fake-img p {
-    font-family: monospace;
-    color: white;
-    text-align: left;
-    margin: 12px 0;
-    text-align: center;
-    font-size: 16px;
-  }
+
 inline: false
 ---
 
@@ -54,7 +39,7 @@ ArchIndex：数据驱动的城市街区检索系统
 
 以奥地利维也纳为例，该研究成果以网页形式公开。任意用户可在网页端使用，交互地获得对城市的整体印象，理解城市肌理。对基于给定地块的输入设计，使用者可快速定位相似街区在城市中地理位置分布，认识形态特征，有益于延续城市历史肌理。整个科研成果在10天内完成，这说明在编程工具日益成熟的今天，设计师与科研人员可快速在网页上呈现其运算设计成果。
   
-{% include figure.html path="/assets/img/archindex.png" class="img-fluid rounded" %}
+{% include figure.html path="/assets/img/archindex.png" class="img-fluid rounded" zoomable=true%}
 <div class="caption">
     图1. ArchIndex 网页设计 （https://index.archialgo.com）
 </div>
@@ -65,7 +50,7 @@ ArchIndex 从形态、活力、功能三个方面自动提取城市街区的表�
 - 活力分析：从城市街区包围矩形内GPS轨迹数据分析该区域的活动情况，用采样点简单表示街区活力值。
 - 功能分析：将POI数据标签预定义为13种主要功能类别，统计其 5 分钟步行圈（400m）范围内功能点的分布情况。
 
-{% include figure.html path="/assets/img/2021-06-20-22-45-55.png"   class="img-fluid rounded" zoomable=true%}
+{% include figure.html path="/assets/img/2021-06-20-22-45-55.png" class="img-fluid rounded" zoomable=true%}
 <div class="caption">
     图2. 分别使用 Inception V3, Capsule Net, Autoencoder 三种模型进行特征提取，以相似街区检索任务测试适合网络应用的神经网络模型。
 </div>
