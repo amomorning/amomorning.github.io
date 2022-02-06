@@ -5,6 +5,10 @@
       "path": "README.md"
     },
     {
+      "basename": "archiweb2020",
+      "path": "_teaching/archiweb2020.md"
+    },
+    {
       "basename": "archindex",
       "path": "_news/archindex.md"
     },
@@ -23,10 +27,6 @@
     {
       "basename": "2020-08-19-hello-world",
       "path": "_posts/2020-08-19-hello-world.md"
-    },
-    {
-      "basename": "archiweb2020",
-      "path": "_teaching/archiweb2020.md"
     }
   ],
   "omittedPaths": [],

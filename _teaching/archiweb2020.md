@@ -46,3 +46,8 @@ ArchiWeb 的存在让创建一个网页应用这件事变得不那么复杂，�
 	  - socket.io客户端和基于flask 的 [socket.io](http://socket.io) 服务器
 	  - pyarchijson 几何库与要素定义
 	  - Python 与 ArchiWeb、AutoCAD (java-cad)、Rhino (headless, connect)
+
+## 课程材料
+需要在校园网内（SEU-WLAN）打开：
+- 教程：[http://docs.web.archialgo.com](http://docs.web.archialgo.com)
+- 视频：[http://video.web.archialgo.com](http://video.web.archialgo.com)

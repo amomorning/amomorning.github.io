@@ -259,16 +259,43 @@ Keep meta-information about your co-authors in `_data/coauthors.yml` and Jekyll 
 ``` yml
 "lastname | family name":
   - firstname: ["name", "f."]
-	url: link to personal website
+    url: link to personal website
 
   - firstname: ["another author", "a"]
-	url: link to personal website
+    url: link to personal website
 
 
 "Mo":
   - firstname: ["Yichen", "Y."]
     url: https://amomorning.github.io
 ```
+#### Entry Keys
+所有的文献放在 `bibliography` 目录当中的 `paper.bib` 文件内。一开始尝试了从 Zotero 导出，结果在网页上显示不大好，如果自己填了 entry 还会被覆盖掉，所以还是需要手填的。
+
+有时间或许应该考虑自己写个....
+
+- `title` 文章目录
+- `author` 作者列表
+- 文献类型
+	- article 期刊
+		- `journal` 
+	- inproceedings 会议
+		- `booktitle`
+	- thesis
+		- 不需要填 title 和 author ？
+- `abstract`  摘要内容
+- `bibtex_show` 显示该文献的 bibtex
+- 链接
+	- `arxiv` arxiv 地址，entry内填arxiv编号
+	- `blog` blog 地址，http
+	- `code` 论文相关的代码位置，http
+	- `website` 论文网页
+	- `video` 视频链接（自定义）
+- 文件
+	- `pdf` pdf文件，需手动放到 `asset/pdf/` ；也可填 http 或 ftp 链接
+	- `supp` 论文的 supplyments，需手动放到 `asset/pdf/` ；也可填 http 或 ftp 链接
+	- `poster` poster，需手动放到 `asset/pdf/` ；也可填 http 或 ftp 链接
+	- `slides` slides，需手动放到 `asset/pdf/` ；也可填 http 或 ftp 链接
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
