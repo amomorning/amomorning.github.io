@@ -1,5 +1,10 @@
 {
   "legacyEditor": false,
   "livePreview": true,
-  "attachmentFolderPath": "assets/img"
+  "attachmentFolderPath": "assets/img",
+  "foldHeading": true,
+  "foldIndent": true,
+  "strictLineBreaks": false,
+  "showFrontmatter": false,
+  "smartIndentList": true
 }

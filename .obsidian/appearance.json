@@ -1,6 +1,6 @@
 {
-  "baseFontSize": 18,
-  "theme": "moonstone",
+  "baseFontSize": 19,
+  "theme": "obsidian",
   "translucency": false,
   "cssTheme": "Things",
   "enabledCssSnippets": [
@@ -9,8 +9,10 @@
     "小滚动条",
     "collapsing-sidebar",
     "nicer-checkboxes",
-    "圆形Checkbox",
     "outliner-for-the-outline-and-file-explorer",
-    "bullet-point-relationship-lines"
+    "bullet-point-relationship-lines",
+    "文件浏览器衬线",
+    "折叠侧边栏",
+    "超大预览"
   ]
 }

@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "README.md",
-            "mode": "source",
+            "mode": "preview",
             "source": false
           }
         }
@@ -48,12 +48,20 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "45b36ac83348db02",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 263.5
   },
   "right": {
     "id": "de3772fdec13ec52",
@@ -70,7 +78,7 @@
               "type": "backlink",
               "state": {
                 "file": "README.md",
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -79,19 +87,34 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "6dc2f6b57de053b1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "active": "66faf19778f57d64",
   "lastOpenFiles": [
     "README.md",
-    "CONTRIBUTING.md",
+    "_news/archindex.md",
+    "_pages/teaching.md",
+    "_pages/publications.md",
+    "_pages/about.md",
     "_posts/2020-08-19-hello-world.md",
-    "_teaching/archiweb2020.md"
+    "_teaching/archiweb2020.md",
+    "_site/README.md",
+    "CONTRIBUTING.md"
   ]
 }
