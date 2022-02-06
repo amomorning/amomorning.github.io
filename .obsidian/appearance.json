@@ -1,0 +1,16 @@
+{
+  "baseFontSize": 18,
+  "theme": "moonstone",
+  "translucency": false,
+  "cssTheme": "Things",
+  "enabledCssSnippets": [
+    "彩色标题",
+    "马克笔高亮",
+    "小滚动条",
+    "collapsing-sidebar",
+    "nicer-checkboxes",
+    "圆形Checkbox",
+    "outliner-for-the-outline-and-file-explorer",
+    "bullet-point-relationship-lines"
+  ]
+}

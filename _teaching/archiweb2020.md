@@ -7,6 +7,7 @@ importance: 1
 category: spring
 ---
 
+![](applications.png)
 {% include figure.html path="/assets/img/applications.png" class="img-fluid rounded" zoomable=true%}
 <div class="caption">
     图1. ArchiWeb 框架 （https://web.archialgo.com）
@@ -22,25 +23,26 @@ ArchiWeb 的存在让创建一个网页应用这件事变得不那么复杂，�
 
 <br>
 
+
 ## 课程大纲
 
 
 1. **ArchiWeb 快速入门 (5月8日)**
-  - JavaScript 特性 (语法、对象、ES6、浏览器调试)
-  - 掌握 THREE.js 的用法与学法
-  - import * as ARCH from ArchiWeb
+	- JavaScript 特性 (语法、对象、ES6、浏览器调试) 
+	- 掌握 THREE.js 的用法与学法
+	- import * as ARCH from ArchiWeb
     
 2. **Vue 学习 (5月14日)**
-  - Vue、Webpack介绍
-  - ArchiWeb viewport 作为网页的一部分
-  - Material Design——以 Vuetify 组件为例
+	  - Vue、Webpack介绍
+	  - ArchiWeb viewport 作为网页的一部分
+	  - Material Design——以 Vuetify 组件为例
     
 3. **Java backend 与 ArchiJSON (5月21日)**
-  - Node服务器、Nginx 、计算机网络基础
-  - WebSocket 与 socket.io
-  - ArchiJSON 要素定义与参数规则
+	  - Node服务器、Nginx 、计算机网络基础
+	  - WebSocket 与 socket.io
+	  - ArchiJSON 要素定义与参数规则
     
 4. **Python backend 与 pyarchijson (5月28日)**
-  - socket.io客户端和基于flask 的 [socket.io](http://socket.io) 服务器
-  - pyarchijson 几何库与要素定义
-  - Python 与 ArchiWeb、AutoCAD (java-cad)、Rhino (headless, connect)
+	  - socket.io客户端和基于flask 的 [socket.io](http://socket.io) 服务器
+	  - pyarchijson 几何库与要素定义
+	  - Python 与 ArchiWeb、AutoCAD (java-cad)、Rhino (headless, connect)

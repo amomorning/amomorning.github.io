@@ -1,0 +1,97 @@
+{
+  "main": {
+    "id": "20f07b078353fa5f",
+    "type": "split",
+    "children": [
+      {
+        "id": "66faf19778f57d64",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "README.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "565014f790434a5e",
+    "type": "split",
+    "children": [
+      {
+        "id": "f0643b3f6fe30b34",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8bf53a5eab011a48",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "8e51ba88232de425",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "de3772fdec13ec52",
+    "type": "split",
+    "children": [
+      {
+        "id": "487626b201f185e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2a9dec1a0ac33435",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "66faf19778f57d64",
+  "lastOpenFiles": [
+    "README.md",
+    "CONTRIBUTING.md",
+    "_posts/2020-08-19-hello-world.md",
+    "_teaching/archiweb2020.md"
+  ]
+}

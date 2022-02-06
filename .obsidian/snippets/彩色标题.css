@@ -1,0 +1,19 @@
+:root {
+    --h1-color: #c25762;
+    --h2-color: #d6866d;
+    --h3-color: #EBC773;
+    --h4-color: #9CB587;
+    --h5-color: #AF8EAD;
+    --h6-color: #AF8EAD;
+    --strong-color: #ff7b72;
+    --em-color: #ff7b72;
+    --accent-h: 225;
+    --accent-s: 31%;
+    --accent-d: 60%;
+}
+
+.theme-dark {
+    --tag-background-color-d: #1f7e81;
+    --code-color: var(--em-color);
+    --background-primary-alt: #222831;
+}

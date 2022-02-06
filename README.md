@@ -35,6 +35,11 @@ Create a prebiew at http://127.0.0.1:4000.
 $ bundle exec jekyll serve
 ```
 
+## More than markdown
+### for loop
+``` ruby
+
+```
 ## Categories
 
 ### News
@@ -49,7 +54,7 @@ inline: true
 ```
 #### Long posts
 
-``` markdown
+``` 
 ---
 layout: post
 title: Present "ArchIndex A Web-based and Data-driven Retrieval System for City Blocks" at CUPUM 2021
