@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "teaching",
+      "path": "_pages/teaching.md"
+    },
+    {
       "basename": "README",
       "path": "README.md"
     },
@@ -11,10 +15,6 @@
     {
       "basename": "archindex",
       "path": "_news/archindex.md"
-    },
-    {
-      "basename": "teaching",
-      "path": "_pages/teaching.md"
     },
     {
       "basename": "publications",
