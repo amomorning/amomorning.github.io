@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://amomorning.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://amomorning.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2023-03-15T14:13:19+00:00</updated><id>https://amomorning.github.io//feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+</subtitle><entry><title type="html">Hello World</title><link href="https://amomorning.github.io//blog/2020/hello-world/" rel="alternate" type="text/html" title="Hello World" /><published>2020-08-18T22:26:08+00:00</published><updated>2020-08-18T22:26:08+00:00</updated><id>https://amomorning.github.io//blog/2020/hello-world</id><content type="html" xml:base="https://amomorning.github.io//blog/2020/hello-world/"><![CDATA[<p>上半年来用云服务器搭了一些小应用，不知不觉发现可以比较完整地做一些东西了。顺手用 NginX 和 Hexo 配置了这个博客，版本控制放在 <a href="https://github.com/amomorning/blog">Github</a> 上。</p>
+
+<h3 id="nginx-的配置">NginX 的配置</h3>
+<p>Hexo 似乎是需要每次写完重新生成静态文件再部署，感觉稍微有些麻烦。如果用 <code class="language-plaintext highlighter-rouge">hexo server</code> 命令则可以动态看到博客内容的更新，所以为了省事就用 NginX 连到 Hexo 的端口了，直接在后台运行 <code class="language-plaintext highlighter-rouge">hexo s</code> 就可以看到博客了。</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nx">server</span> <span class="p">{</span>
+        <span class="nx">listen</span> <span class="mi">80</span><span class="p">;</span>
+        <span class="nx">server_name</span> <span class="nx">blog</span><span class="p">.</span><span class="nx">amomorning</span><span class="p">.</span><span class="nx">com</span><span class="p">;</span>
+        <span class="nx">location</span> <span class="o">/</span> <span class="p">{</span>
+            <span class="nx">proxy_pass</span> <span class="na">http</span><span class="p">:</span><span class="c1">//127.0.0.1:4000;</span>
+        <span class="p">}</span>
+        <span class="nx">location</span> <span class="o">/</span><span class="nx">webhook</span> <span class="p">{</span>
+            <span class="nx">proxy_pass</span> <span class="nx">http</span><span class="p">:</span><span class="c1">//127.0.0.1:40067;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<h3 id="pm2-监控博客服务器进程">pm2 监控博客服务器进程</h3>
+<p>为了服务器能稳定运行，用 <code class="language-plaintext highlighter-rouge">pm2</code> 守护进程监控服务，在服务挂掉的时候能自动重启。</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// hexo-auto.js</span>
+<span class="kd">var</span> <span class="nx">exec</span> <span class="o">=</span> <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">child_process</span><span class="dl">'</span><span class="p">).</span><span class="nx">exec</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">cmd</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">nohup hexo server &gt;&gt; server.log &amp;</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="nf">exec</span><span class="p">(</span><span class="nx">cmd</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">stdout</span><span class="p">,</span> <span class="nx">stderr</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">process</span><span class="p">.</span><span class="nf">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="p">});</span>
+
+</code></pre></div></div>
+<p>用pm2运行该代码：</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pm2 start hexo-auto.js
+</code></pre></div></div>
+<h3 id="webhook-侦听-git-push">Webhook 侦听 git push</h3>
+<p>将博客内容放在 GitHub 的代码仓库之后，就可以在不同设备上写博客啦（希望真的会有更新哈哈哈<br />
+因为懒于每次写完博客要连接服务器，就在用了 GitHub 设置里的 Webhook 功能，服务器收到代码仓库更新后能自动 <code class="language-plaintext highlighter-rouge">git pull</code>，更新博客内容。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// webhook.js</span>
+<span class="kd">var</span> <span class="nx">http</span> <span class="o">=</span> <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">http</span><span class="dl">'</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">createHandler</span> <span class="o">=</span> <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">github-webhook-handler</span><span class="dl">'</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">handler</span> <span class="o">=</span> <span class="nf">createHandler</span><span class="p">({</span><span class="na">path</span><span class="p">:</span> <span class="dl">'</span><span class="s1">/webhook</span><span class="dl">'</span><span class="p">,</span> <span class="na">secret</span><span class="p">:</span> <span class="dl">'</span><span class="s1">your webhook secret</span><span class="dl">'</span><span class="p">})</span>
+<span class="kd">const</span> <span class="p">{</span><span class="nx">exec</span><span class="p">}</span> <span class="o">=</span> <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">child_process</span><span class="dl">'</span><span class="p">)</span> <span class="c1">// 执行本地命令</span>
+
+<span class="nx">http</span><span class="p">.</span><span class="nf">createServer</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nf">handler</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">res</span><span class="p">.</span><span class="nx">statusCode</span> <span class="o">=</span> <span class="mi">404</span>
+		<span class="nx">res</span><span class="p">.</span><span class="nf">end</span><span class="p">(</span><span class="dl">'</span><span class="s1">no such location</span><span class="dl">'</span><span class="p">)</span>
+	<span class="p">})</span>
+<span class="p">}).</span><span class="nf">listen</span><span class="p">(</span><span class="dl">'</span><span class="s1">40067</span><span class="dl">'</span><span class="p">)</span>
+
+<span class="nx">handler</span><span class="p">.</span><span class="nf">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">error</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nf">error</span><span class="p">(</span><span class="dl">'</span><span class="s1">Error:</span><span class="dl">'</span><span class="p">,</span> <span class="nx">err</span><span class="p">.</span><span class="nx">message</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="nx">handler</span><span class="p">.</span><span class="nf">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">push</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Received a push event for %s to %s</span><span class="dl">'</span><span class="p">,</span>
+		<span class="nx">event</span><span class="p">.</span><span class="nx">payload</span><span class="p">.</span><span class="nx">repository</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span>
+		<span class="nx">event</span><span class="p">.</span><span class="nx">payload</span><span class="p">.</span><span class="nx">ref</span><span class="p">)</span>
+	<span class="nf">exec</span><span class="p">(</span><span class="dl">'</span><span class="s1">cd /your/blog/dir &amp;&amp; git pull</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">stdout</span><span class="p">,</span> <span class="nx">stderr</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+		<span class="nf">if </span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+			<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+		<span class="p">}</span>
+		<span class="k">else</span> <span class="p">{</span>
+			<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">updated success</span><span class="dl">'</span><span class="p">)</span>
+		<span class="p">}</span>
+	<span class="p">})</span>
+<span class="p">})</span>
+
+</code></pre></div></div>
+<p>同样用pm2运行该代码：</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pm2 start webhook.js
+</code></pre></div></div>
+<p><del>做得很方便用的样子，就是不知道博客里放点什么好呢 &gt;w«/del&gt;</del></p>]]></content><author><name></name></author><category term="技术随笔" /><category term="daily" /><category term="web" /><category term="nginx" /><category term="javascript" /><summary type="html"><![CDATA[a quick run down on accessing github metadata.]]></summary></entry></feed>

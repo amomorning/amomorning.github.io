@@ -10,10 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Yichen  Mo | blog</title>
+    <title>Yichen  Mo | ArchiWeb 2021</title>
     <meta name="author" content="Yichen  Mo" />
-    <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-" />
+    <meta name="description" content="Web-based Editor for Computational Design" />
     <meta name="keywords" content="architects, programmer, academic-website, portfolio" />
 
 
@@ -34,7 +33,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon_32.png">
 
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://amomorning.github.io//blog/">
+    <link rel="canonical" href="https://amomorning.github.io//teaching/archiweb2021/">
 
     <!-- Dark Mode -->
     <script src="/assets/js/theme.js"></script>
@@ -68,9 +67,9 @@
               </li>
               
               <!-- Blog -->
-              <li class="nav-item active">
+              <li class="nav-item ">
                 <!-- <a class="nav-link" href="/blog/">blog -->
-                <a class="nav-link" href="http://blog.amomorning.com">blog<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="http://blog.amomorning.com" target="_blank" rel="noopener noreferrer">blog</a>
               </li>
 
               <!-- Other pages -->
@@ -82,8 +81,8 @@
               </li>
 
               <!-- Toogle theme mode -->
-              <div class = "toggle-container">
-                <a id = "light-toggle">
+              <div class="toggle-container">
+                <a id="light-toggle">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
                 </a>
@@ -97,72 +96,98 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <div class="post">
+      <!-- page.html -->
+        <div class="post">
 
-  <div class="header-bar">
-    <h1>al-folio</h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
+          <header class="post-header">
+            <h1 class="post-title">ArchiWeb 2021</h1>
+            <p class="post-description">Web-based Editor for Computational Design</p>
+          </header>
 
+          <article>
+            <p><img src="applications.png" alt=""></p>
+<figure>
 
-  <ul class="post-list">
-    
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/applications-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/applications-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/applications-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded" src="/assets/img/applications.png" data-zoomable="">
 
-    
-    
-    
-    
+  </picture>
 
-    <li>
-      <h3><a class="post-title" href="/blog/2020/hello-world/">Hello World</a>
-      </h3>
-      <p>a quick run down on accessing github metadata.</p>
-      <p class="post-meta"> 3 min read &nbsp; &middot; &nbsp;
-        August 18, 2020
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2020">
-          <i class="fas fa-calendar fa-sm"></i> 2020 </a>
+</figure>
 
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/tag/daily">
-              <i class="fas fa-hashtag fa-sm"></i> daily</a> &nbsp;
-              
-            <a href="/blog/tag/web">
-              <i class="fas fa-hashtag fa-sm"></i> web</a> &nbsp;
-              
-            <a href="/blog/tag/nginx">
-              <i class="fas fa-hashtag fa-sm"></i> nginx</a> &nbsp;
-              
-            <a href="/blog/tag/javascript">
-              <i class="fas fa-hashtag fa-sm"></i> javascript</a> &nbsp;
-              
-          
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/category/技术随笔">
-              <i class="fas fa-tag fa-sm"></i> 技术随笔</a> &nbsp;
-              
-          
-    </p>
-    </li>
-
-    
-  </ul>
-
-  
-
+<div class="caption">
+    图1. ArchiWeb 框架 （https://web.archialgo.com）
 </div>
+
+<h2 id="概述">概述</h2>
+
+<p>ArchiWeb 是一个开源的三维模型渲染及编辑器，可以方便建筑师快速展示运算设计成果。</p>
+
+<p>30年前，CAD的出现改变了建筑师的工作状态。在参数化设计盛行的今天，交互式的、可参数定义的设计流程形成了建筑师新的工作模式，独立的BIM开发工程师、参数化设计师等新的职业渐渐进入视野。我们不禁要问，建筑设计的下一步是什么？设计的呈现媒介会变成什么样？</p>
+
+<p>ArchiWeb 的存在让创建一个网页应用这件事变得不那么复杂，建筑师可以为参数化的设计作品开发一个网页，并提供参数进行设计调整。一个网页往往可以意味着一个作品族，客户可根据场地限定、环境调整参数得到特定状态的作品，并可以通过设计与加工的全流程数据链最终得到建筑设计产品。回到上面的问题，ArchiWeb 或许是一个回答。</p>
+
+<p><br></p>
+
+<h2 id="课程大纲">课程大纲</h2>
+
+<ol>
+  <li>
+<strong>ArchiWeb 快速入门 (5月8日)</strong>
+    <ul>
+      <li>JavaScript 特性 (语法、对象、ES6、浏览器调试)</li>
+      <li>掌握 THREE.js 的用法与学法</li>
+      <li>import * as ARCH from ArchiWeb</li>
+    </ul>
+  </li>
+  <li>
+<strong>Vue 学习 (5月14日)</strong>
+    <ul>
+      <li>Vue、Webpack介绍</li>
+      <li>ArchiWeb viewport 作为网页的一部分</li>
+      <li>Material Design——以 Vuetify 组件为例</li>
+    </ul>
+  </li>
+  <li>
+<strong>Java backend 与 ArchiJSON (5月21日)</strong>
+    <ul>
+      <li>Node服务器、Nginx 、计算机网络基础</li>
+      <li>WebSocket 与 socket.io</li>
+      <li>ArchiJSON 要素定义与参数规则</li>
+    </ul>
+  </li>
+  <li>
+<strong>Python backend 与 pyarchijson (5月28日)</strong>
+    <ul>
+      <li>socket.io客户端和基于flask 的 <a href="http://socket.io" target="_blank" rel="noopener noreferrer">socket.io</a> 服务器</li>
+      <li>pyarchijson 几何库与要素定义</li>
+      <li>Python 与 ArchiWeb、AutoCAD (java-cad)、Rhino (headless, connect)</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="课程材料">课程材料</h2>
+<p>需要在校园网内（SEU-WLAN）打开：</p>
+<ul>
+  <li>教程：<a href="http://docs.web.archialgo.com" target="_blank" rel="noopener noreferrer">http://docs.web.archialgo.com</a>
+</li>
+  <li>视频：<a href="http://video.web.archialgo.com" target="_blank" rel="noopener noreferrer">http://video.web.archialgo.com</a>
+</li>
+</ul>
+
+          </article>
+
+        </div>
 
     </div>
 
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
-        &copy; Copyright 2022 - 2023  <strong> Yichen  Mo</strong>. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+        © Copyright 2022 - 2023  <strong> Yichen  Mo</strong>. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
 <strong>Last updated:</strong> March 15, 2023.
       </div>
     </footer>

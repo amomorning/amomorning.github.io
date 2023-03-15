@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<!-- _layouts/distill.html -->
+<html>
+  <head>        
+    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Yichen  Mo | Make ArchIndex public at CUPUM 2021</title>
+    <meta name="author" content="Yichen  Mo" />
+    <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+" />
+    <meta name="keywords" content="architects, programmer, academic-website, portfolio" />
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+    <!-- Styles -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon_32.png">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://amomorning.github.io//news/archindex/">
+
+    <!-- Dark Mode -->
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    <!-- Distill js -->
+    <script src="/assets/js/distillpub/template.v2.js"></script>
+    <script src="/assets/js/distillpub/transforms.v2.js"></script>
+    
+  </head>
+
+  <d-front-matter>
+    <script async type="text/json">{
+      "title": "Make ArchIndex public at CUPUM 2021",
+      "description": "",
+      "published": "June 13, 2021",
+      "authors": [
+        {
+          "author": "Yichen Mo",
+          "authorURL": "https://amomorning.com",
+          "affiliations": [
+            {
+              "name": "Southeast University",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "author": "Baizhou Zhang",
+          "authorURL": "",
+          "affiliations": [
+            {
+              "name": "",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "author": "Biao Li",
+          "authorURL": "",
+          "affiliations": [
+            {
+              "name": "",
+              "url": ""
+            }
+          ]
+        }
+        
+      ],
+      "katex": {
+        "delimiters": [
+          {
+            "left": "$",
+            "right": "$",
+            "display": false
+          },
+          {
+            "left": "$$",
+            "right": "$$",
+            "display": true
+          }
+        ]
+      }
+    }</script>
+  </d-front-matter>
+
+  <body class="sticky-bottom-footer">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="https://amomorning.github.io//"><span class="font-weight-bold">Yichen</span>   Mo</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">about</a>
+              </li>
+              
+              <!-- Blog -->
+              <li class="nav-item ">
+                <!-- <a class="nav-link" href="/blog/">blog -->
+                <a class="nav-link" href="http://blog.amomorning.com" target="_blank" rel="noopener noreferrer">blog</a>
+              </li>
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">publications</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/teaching/">teaching</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <div class="toggle-container">
+                <a id="light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- Content -->
+    <div class="post distill">
+
+      <d-title>
+        <h1>Make ArchIndex public at CUPUM 2021</h1>
+        <p></p>
+      </d-title>
+
+      <d-byline></d-byline>
+
+      <d-article>
+        <d-contents>
+          <nav class="l-text figcaption">
+          <h3>Contents</h3>
+            <div><a href="#%E5%BC%95%E8%A8%80">引言</a></div>
+            <div><a href="#%E6%96%B9%E6%B3%95">方法</a></div>
+            <div><a href="#%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82">技术细节</a></div>
+            <div><a href="#%E5%BA%94%E7%94%A8%E5%B1%95%E7%A4%BA">应用展示</a></div>
+            
+          </nav>
+        </d-contents>
+
+        <p>1989年，第一届计算机在城市规划和城市管理中应用国际会议（CUPUM）在香港举行，随后两年举办一次，均由世界著名的高校承办。20年来，它一直是学术界交流计算机思想与应用的主要国际会议之一，交流思想与计算机技术的应用，以解决影响城市规划与发展的一系列社会、管理及环境问题。</p>
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/2021-06-14-21-38-27-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/2021-06-14-21-38-27-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/2021-06-14-21-38-27-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/2021-06-14-21-38-27.png" data-zoomable="">
+
+  </picture>
+
+</figure>
+
+<p>2021年6月9日-11日，第 17届 CUPUM 2021 会议在芬兰赫尔辛基由阿尔托大学举办，采用线上会议的模式，主题为 “TOGETHER: 
+Urban Informatics for Future Cities”，集中讨论协作、多学科和包容性的城市转向，并强调对未来城市的共同创造。</p>
+
+<hr>
+
+<blockquote>
+  <p>论文发表内容：<br>
+ArchIndex: A Web-based and Data-driven Retrieval System for City Blocks<br>
+ArchIndex：数据驱动的城市街区检索系统</p>
+</blockquote>
+
+<h3 id="引言">引言</h3>
+<p>随着城市在物理层面上的城市化、抽象层面上的数字化与运算化，城市街区的表述从人为特征提取，转向基于城市数据的表示学习。从现有的城市数据可提取城市特征构建数据库，通过城市街区样本的相似度检索，以实现城市肌理的认知、发现与利用。目前为止，在城市研究上，研究者倾向通过主观判断提取城市特征，这样的方法不具有普适性，且需要花费大量时间认识城市。</p>
+
+<p>本研究提出了一个数据驱动的城市街区案例库的检索框架，该框架从开源矢量地图数据自动构建数据库，以数据库为基础生成给定城市或城市群的带标签数据样本。数据驱动的方法从样本学习每个街区地块的形态、活力、功能特点，生成高维特征向量，用于城市样本的匹配。</p>
+
+<p>以奥地利维也纳为例，该研究成果以网页形式公开。任意用户可在网页端使用，交互地获得对城市的整体印象，理解城市肌理。对基于给定地块的输入设计，使用者可快速定位相似街区在城市中地理位置分布，认识形态特征，有益于延续城市历史肌理。整个科研成果在10天内完成，这说明在编程工具日益成熟的今天，设计师与科研人员可快速在网页上呈现其运算设计成果。</p>
+
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/archindex-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/archindex-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/archindex-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded" src="/assets/img/archindex.png" data-zoomable="">
+
+  </picture>
+
+</figure>
+
+<div class="caption">
+    图1. ArchIndex 网页设计 （https://index.archialgo.com）
+</div>
+
+<h3 id="方法">方法</h3>
+<p>ArchIndex 从形态、活力、功能三个方面自动提取城市街区的表述特征。数据收集基于对 OpenStreetMap 的矢量地图数据进行拓扑结构的分析，并通过地块面积、建筑密度等基础几何计算，提取出 6000 余有效街区。对每个街区分析，并自动提取特征之后，相应的结果存入数据库中，形成建成环境与既有方案的记忆库。</p>
+<ul>
+  <li>形态分析：从数据库生成每个街区的组团形态与肌理，得到 500x500 像素的图像数据集，使用预训练模型提取高维特征向量。</li>
+  <li>活力分析：从城市街区包围矩形内GPS轨迹数据分析该区域的活动情况，用采样点简单表示街区活力值。</li>
+  <li>功能分析：将POI数据标签预定义为13种主要功能类别，统计其 5 分钟步行圈（400m）范围内功能点的分布情况。</li>
+</ul>
+
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/2021-06-20-22-45-55-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/2021-06-20-22-45-55-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/2021-06-20-22-45-55-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded" src="/assets/img/2021-06-20-22-45-55.png" data-zoomable="">
+
+  </picture>
+
+</figure>
+
+<div class="caption">
+    图2. 分别使用 Inception V3, Capsule Net, Autoencoder 三种模型进行特征提取，以相似街区检索任务测试适合网络应用的神经网络模型。
+</div>
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/1998-20m-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/1998-20m-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/1998-20m-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded" src="/assets/img/1998-20m.png" data-zoomable="">
+
+  </picture>
+
+</figure>
+
+<div class="caption">
+    图3. 城市街区包围矩形范围内GPS轨迹数据，间隔20m采样
+</div>
+
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/6067-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/6067-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/6067-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded" src="/assets/img/6067.png" data-zoomable="">
+
+  </picture>
+
+</figure>
+
+<div class="caption">
+    图4. 13 种主要功能类别与 5 分钟步行圈（400m）内功能点分布。
+</div>
+
+<h3 id="技术细节">技术细节</h3>
+<p>ArchIndex是分布式的云端应用。用户交互部分以网页应用呈现，可在任意电脑上使用Chrome内核的浏览器操作。以node上的WebSocket服务分别连接Java端的数据服务与Python的神经网络运算。名为<code class="language-plaintext highlighter-rouge">ArchiJSON</code>的数据规范将这多个部分连接起来，进行参数、检索结果、几何图元的传递。</p>
+
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/2021-06-20-22-44-14-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/2021-06-20-22-44-14-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/2021-06-20-22-44-14-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded" src="/assets/img/2021-06-20-22-44-14.png" data-zoomable="">
+
+  </picture>
+
+</figure>
+
+<div class="caption">
+    图5. 应用程序框架（简化）
+</div>
+
+<h3 id="结果与讨论">结果与讨论</h3>
+<p>基于数据的方法对抽象
+城市中
+基于数据的方法，
+图6、图7分别展示了两个 ArchIndex 在传统形态学任务上的结果。</p>
+
+<p>本研究使用开源数据提供了一个研发框架，该方法可对任意城市快速构建云端应用程序。通过与机构合作，更好的数据亦能助益于生成更好的检索结果。在后面的研究中，ArchIndex 为数值抽象概念的表示提供了研究平台，可进一步提取形态的空间关系与基于轨迹图结构的活力分析等。</p>
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/result1-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/result1-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/result1-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded" src="/assets/img/result1.jpg" data-zoomable="">
+
+  </picture>
+
+</figure>
+
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/result2-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/result2-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/result2-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded" src="/assets/img/result2.jpg" data-zoomable="">
+
+  </picture>
+
+</figure>
+
+<div class="caption">
+    图6. 通过调整参数系数，可以比较街区形态表述中手工特征提取与自动特征提取的方法。
+</div>
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/result3-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/result3-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/result3-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded" src="/assets/img/result3.jpg" data-zoomable="">
+
+  </picture>
+
+</figure>
+
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/result4-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/result4-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/result4-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded" src="/assets/img/result4.jpg" data-zoomable="">
+
+  </picture>
+
+</figure>
+
+<div class="caption">
+    图7. 使用 ArchIndex 探索式地发现城市原型
+</div>
+
+<h3 id="应用展示">应用展示</h3>
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/interactive.gif-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/interactive.gif-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/interactive.gif-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded" src="/assets/img/interactive.gif" data-zoomable="">
+
+  </picture>
+
+</figure>
+
+<div class="caption">
+    图8. ArchIndex 在网页端提供简单的场地地块编辑、功能区划分、调整检索系数等功能。
+</div>
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/archindex900.gif-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/archindex900.gif-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/archindex900.gif-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/archindex900.gif" data-zoomable="">
+
+  </picture>
+
+</figure>
+
+<div class="caption">
+    图9. ArchIndex 可快速返回检索结果，并定位其在城市中的位置。
+</div>
+
+<p>应用：https://index.archialgo.com</p>
+
+<p>源码：https://github.com/Inst-AAA/archindex</p>
+
+
+      </d-article>
+
+      <d-appendix>
+        <d-footnote-list></d-footnote-list>
+        <d-citation-list></d-citation-list>
+      </d-appendix>
+
+    </div>
+
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <div class="container">
+        © Copyright 2022 - 2023  <strong> Yichen  Mo</strong>. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
+<strong>Last updated:</strong> March 15, 2023.
+      </div>
+    </footer>
+
+
+  </body>
+
+  <d-bibliography src="/assets/bibliography/">
+  </d-bibliography>
+
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+  <script src="/assets/js/distillpub/overrides.js"></script>
+
+</html>

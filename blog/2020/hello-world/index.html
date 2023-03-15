@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>        
+    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Yichen  Mo | Hello World</title>
+    <meta name="author" content="Yichen  Mo" />
+    <meta name="description" content="a quick run down on accessing github metadata." />
+    <meta name="keywords" content="architects, programmer, academic-website, portfolio" />
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+    <!-- Styles -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon_32.png">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://amomorning.github.io//blog/2020/hello-world/">
+
+    <!-- Dark Mode -->
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+  </head>
+
+  <!-- Body -->
+  <body class="sticky-bottom-footer">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="https://amomorning.github.io//"><span class="font-weight-bold">Yichen</span>   Mo</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">about</a>
+              </li>
+              
+              <!-- Blog -->
+              <li class="nav-item active">
+                <!-- <a class="nav-link" href="/blog/">blog -->
+                <a class="nav-link" href="http://blog.amomorning.com" target="_blank" rel="noopener noreferrer">blog</a>
+              </li>
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">publications</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/teaching/">teaching</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <div class="toggle-container">
+                <a id="light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <!-- _layouts/post.html -->
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Hello World</h1>
+    <p class="post-meta">August 18, 2020</p>
+    <p class="post-tags">
+      <a href="/blog/2020"> <i class="fas fa-calendar fa-sm"></i> 2020 </a>
+        ·  
+        <a href="/blog/tag/daily">
+          <i class="fas fa-hashtag fa-sm"></i> daily</a>  
+          <a href="/blog/tag/web">
+          <i class="fas fa-hashtag fa-sm"></i> web</a>  
+          <a href="/blog/tag/nginx">
+          <i class="fas fa-hashtag fa-sm"></i> nginx</a>  
+          <a href="/blog/tag/javascript">
+          <i class="fas fa-hashtag fa-sm"></i> javascript</a>  
+          
+        ·  
+        <a href="/blog/category/%E6%8A%80%E6%9C%AF%E9%9A%8F%E7%AC%94">
+          <i class="fas fa-tag fa-sm"></i> 技术随笔</a>  
+          
+
+    </p>
+  </header>
+
+  <article class="post-content">
+    <p>上半年来用云服务器搭了一些小应用，不知不觉发现可以比较完整地做一些东西了。顺手用 NginX 和 Hexo 配置了这个博客，版本控制放在 <a href="https://github.com/amomorning/blog" target="_blank" rel="noopener noreferrer">Github</a> 上。</p>
+
+<h3 id="nginx-的配置">NginX 的配置</h3>
+<p>Hexo 似乎是需要每次写完重新生成静态文件再部署，感觉稍微有些麻烦。如果用 <code class="language-plaintext highlighter-rouge">hexo server</code> 命令则可以动态看到博客内容的更新，所以为了省事就用 NginX 连到 Hexo 的端口了，直接在后台运行 <code class="language-plaintext highlighter-rouge">hexo s</code> 就可以看到博客了。</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nx">server</span> <span class="p">{</span>
+        <span class="nx">listen</span> <span class="mi">80</span><span class="p">;</span>
+        <span class="nx">server_name</span> <span class="nx">blog</span><span class="p">.</span><span class="nx">amomorning</span><span class="p">.</span><span class="nx">com</span><span class="p">;</span>
+        <span class="nx">location</span> <span class="o">/</span> <span class="p">{</span>
+            <span class="nx">proxy_pass</span> <span class="na">http</span><span class="p">:</span><span class="c1">//127.0.0.1:4000;</span>
+        <span class="p">}</span>
+        <span class="nx">location</span> <span class="o">/</span><span class="nx">webhook</span> <span class="p">{</span>
+            <span class="nx">proxy_pass</span> <span class="nx">http</span><span class="p">:</span><span class="c1">//127.0.0.1:40067;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<h3 id="pm2-监控博客服务器进程">pm2 监控博客服务器进程</h3>
+<p>为了服务器能稳定运行，用 <code class="language-plaintext highlighter-rouge">pm2</code> 守护进程监控服务，在服务挂掉的时候能自动重启。</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// hexo-auto.js</span>
+<span class="kd">var</span> <span class="nx">exec</span> <span class="o">=</span> <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">child_process</span><span class="dl">'</span><span class="p">).</span><span class="nx">exec</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">cmd</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">nohup hexo server &gt;&gt; server.log &amp;</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="nf">exec</span><span class="p">(</span><span class="nx">cmd</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">stdout</span><span class="p">,</span> <span class="nx">stderr</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">process</span><span class="p">.</span><span class="nf">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="p">});</span>
+
+</code></pre></div></div>
+<p>用pm2运行该代码：</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pm2 start hexo-auto.js
+</code></pre></div></div>
+<h3 id="webhook-侦听-git-push">Webhook 侦听 git push</h3>
+<p>将博客内容放在 GitHub 的代码仓库之后，就可以在不同设备上写博客啦（希望真的会有更新哈哈哈<br>
+因为懒于每次写完博客要连接服务器，就在用了 GitHub 设置里的 Webhook 功能，服务器收到代码仓库更新后能自动 <code class="language-plaintext highlighter-rouge">git pull</code>，更新博客内容。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// webhook.js</span>
+<span class="kd">var</span> <span class="nx">http</span> <span class="o">=</span> <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">http</span><span class="dl">'</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">createHandler</span> <span class="o">=</span> <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">github-webhook-handler</span><span class="dl">'</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">handler</span> <span class="o">=</span> <span class="nf">createHandler</span><span class="p">({</span><span class="na">path</span><span class="p">:</span> <span class="dl">'</span><span class="s1">/webhook</span><span class="dl">'</span><span class="p">,</span> <span class="na">secret</span><span class="p">:</span> <span class="dl">'</span><span class="s1">your webhook secret</span><span class="dl">'</span><span class="p">})</span>
+<span class="kd">const</span> <span class="p">{</span><span class="nx">exec</span><span class="p">}</span> <span class="o">=</span> <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">child_process</span><span class="dl">'</span><span class="p">)</span> <span class="c1">// 执行本地命令</span>
+
+<span class="nx">http</span><span class="p">.</span><span class="nf">createServer</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nf">handler</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">res</span><span class="p">.</span><span class="nx">statusCode</span> <span class="o">=</span> <span class="mi">404</span>
+		<span class="nx">res</span><span class="p">.</span><span class="nf">end</span><span class="p">(</span><span class="dl">'</span><span class="s1">no such location</span><span class="dl">'</span><span class="p">)</span>
+	<span class="p">})</span>
+<span class="p">}).</span><span class="nf">listen</span><span class="p">(</span><span class="dl">'</span><span class="s1">40067</span><span class="dl">'</span><span class="p">)</span>
+
+<span class="nx">handler</span><span class="p">.</span><span class="nf">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">error</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nf">error</span><span class="p">(</span><span class="dl">'</span><span class="s1">Error:</span><span class="dl">'</span><span class="p">,</span> <span class="nx">err</span><span class="p">.</span><span class="nx">message</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="nx">handler</span><span class="p">.</span><span class="nf">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">push</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Received a push event for %s to %s</span><span class="dl">'</span><span class="p">,</span>
+		<span class="nx">event</span><span class="p">.</span><span class="nx">payload</span><span class="p">.</span><span class="nx">repository</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span>
+		<span class="nx">event</span><span class="p">.</span><span class="nx">payload</span><span class="p">.</span><span class="nx">ref</span><span class="p">)</span>
+	<span class="nf">exec</span><span class="p">(</span><span class="dl">'</span><span class="s1">cd /your/blog/dir &amp;&amp; git pull</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">stdout</span><span class="p">,</span> <span class="nx">stderr</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+		<span class="nf">if </span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+			<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+		<span class="p">}</span>
+		<span class="k">else</span> <span class="p">{</span>
+			<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">updated success</span><span class="dl">'</span><span class="p">)</span>
+		<span class="p">}</span>
+	<span class="p">})</span>
+<span class="p">})</span>
+
+</code></pre></div></div>
+<p>同样用pm2运行该代码：</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pm2 start webhook.js
+</code></pre></div></div>
+<p><del>做得很方便用的样子，就是不知道博客里放点什么好呢 &gt;w«/del&gt;</del></p>
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <div class="container">
+        © Copyright 2022 - 2023  <strong> Yichen  Mo</strong>. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
+<strong>Last updated:</strong> March 15, 2023.
+      </div>
+    </footer>
+
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Mansory & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script src="/assets/js/common.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    
+  </body>
+</html>
+
